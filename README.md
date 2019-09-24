@@ -36,3 +36,11 @@ services:
           npm install
           gulp
 ```
+
+## Troubleshooting
+
+### Docker usage with networks
+
+If you use this image over a network, the usefull watching files will only work if you turn on `usePolling` option.
+
+Example : `gulp.watch(glob, {usePolling: true}, yourFunction)`
